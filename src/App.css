@@ -1,13 +1,16 @@
 .button-grid {
+    width: fit-content;
+    margin: 20px auto;
     display: grid; /* グリッドレイアウト */
     grid-template-columns: repeat(4, 60px); /* 列の定義: 4列、各列の幅60px */
     gap: 8px; /* グリッド間の隙間 */
-    transition: 0.3s;
 }
-.button-grid:hover {
-    background: blue;
+button:hover {
+    background: rgb(207, 207, 240);
 }
 .display {
+    margin: 0 auto;
+    width: 264px;
     height: 24px;
     line-height: 24px;
     background-color: antiquewhite;

@@ -54,15 +54,17 @@ export function Calculator() {
         setDisplay(display + btn);
     }
 return (
-        <div>
+        <div style={{ textAlign: "center" }}>
             <h2>電卓アプリ</h2>
             <div className={isError ? "display error" : "display"}>
                 {display}
             </div>
 
-            {buttons.map((btn) => (
-                <button key={btn} className='button-grid' onClick={() => handleClick(btn)}>{btn}</button>
-            ))}
+            <div className='button-grid'>
+                {buttons.map((btn) => (
+                    <button key={btn} onClick={() => handleClick(btn)}>{btn}</button>
+                ))}
+            </div>
         </div>
     )
 }
